@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Remixicon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      integrity="sha512-Jp3oCtkKo8j/WRrHq2jrYMtJogclQybtR6+81arCLTO/TvWj3oaF4NkZQs2bTqWJ8An8L2MLKKfvsn3H8vZP1g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../dist/style.css" />
+  </head>
+
+  <body
+    class="bg-body-color text-text-color text-base font-body-font dark:bg-dark-body-color dark:text-dark-text-color"
+  >
+    <!-- Navbar -->
+    <nav
+      class="fixed left-0 bottom-8 w-full z-50 lg:top-0 lg:bottom-auto duration-300"
+    >
+      <div
+        class="container mx-auto w-[90%] h-20 bg-body-color flex justify-between items-center px-12 rounded-[3rem] shadow-box-shadow-1 sm:w-96 lg:w-auto lg:shadow-none lg:rounded-none lg:p-0 dark:bg-dark-container-color dark:shadow-box-shadow-dark lg:dark:bg-dark-body-color"
+      >
+        <div
+          class="text-text-color-light font-title-font font-medium text-lg hover:text-title-color dark:text-dark-text-color dark:hover:text-dark-title-color"
+        >
+          <a href="#home">John</a>
+        </div>
+
+        <!-- Nav menu -->
+        <div
+          class="fixed w-[88%] left-0 right-0 bottom-8 hidden mx-auto bg-body-color shadow-box-shadow-1 rounded-[2rem] pt-8 px-6 pb-20 sm:w-96 lg:inline-flex lg:bottom-auto lg:pb-0 lg:pt-0 lg:px-0 lg:rounded-none lg:shadow-none dark:bg-dark-container-color dark:shadow-box-shadow-dark lg:dark:bg-dark-body-color"
+          id="nav-menu"
+        >
+          <div class="grid grid-cols-3 justify-center gap-x-12 gap-y-8 lg:flex">
+            <a
+              class="nav-link lg:text-base hover:text-title-color dark:text-dark-text-color dark:hover:text-dark-title-color"
+              href="#home"
+              ><i class="ri-home-5-line text-lg lg:hidden"></i>Home</a
+            >
+            <a
+              class="nav-link lg:text-base hover:text-title-color dark:text-dark-text-color dark:hover:text-dark-title-color"
+              href="#skills"
+              ><i class="ri-trophy-line text-lg lg:hidden"></i>Skills</a
+            >
+            <a
+              class="nav-link lg:text-base hover:text-title-color dark:text-dark-text-color dark:hover:text-dark-title-color"
+              href="#services"
+              ><i class="ri-briefcase-line text-lg lg:hidden"></i>Services</a
+            >
+            <a
+              class="nav-link lg:text-base hover:text-title-color dark:text-dark-text-color dark:hover:text-dark-title-color"
+              href="#projects"
+              ><i class="ri-image-line text-lg lg:hidden"></i>Projects</a
+            >
+            <a
+              class="nav-link lg:text-base hover:text-title-color dark:text-dark-text-color dark:hover:text-dark-title-color"
+              href="#testimonial"
+              ><i class="ri-book-open-line text-lg lg:hidden"></i>Testimonial</a
+            >
+            <a
+              class="nav-link lg:text-base hover:text-title-color dark:text-dark-text-color dark:hover:text-dark-title-color"
+              href="#contact"
+              ><i class="ri-chat-3-line text-lg lg:hidden"></i>Contact</a
+            >
+          </div>
+
+          <!-- Close button -->
+          <div
+            class="text-title-color absolute right-6 bottom-3 text-2xl cursor-pointer dark:text-dark-title-color"
+            id="nav-close-btn"
+          >
+            <i class="ri-close-line lg:hidden"></i>
+          </div>
+        </div>
+
+        <!-- Nav Buttons -->
+        <div
+          class="flex items-center gap-x-4 text-text-color-light hover:text-title-color dark:text-dark-text-color dark:hover:text-dark-title-color"
+        >
+          <!-- Dark and Light mood buttons -->
+          <div class="cursor-pointer text-xl">
+            <i class="ri-sun-line" id="sun"></i>
+            <i class="ri-moon-line" id="moon"></i>
+          </div>
+          <!-- Mobile menu button -->
+          <div class="cursor-pointer text-xl lg:hidden" id="menu-btn">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Section -->
+    <section class="home mt-16 py-10 lg:pt-20" id="home">
+      <div
+        class="container mx-auto grid gap-y-16 border-b border-solid border-title-color pb-12 lg:pt-8 md:pb-20 md:grid-cols-12 dark:border-dark-border-color"
+      >
+        <!-- Home Hero Image -->
+        <div class="grid gap-y-8 lg:gap-y-10 md:col-span-6 md:order-2">
+          <div>
+            <h1
+              class="text-center text-2xl tracking-wider font-title-font text-title-color font-medium lg:text-5xl dark:text-dark-title-color"
+            >
+              Hi, I'm John
+            </h1>
+            <p
+              class="text-center text-text-color-light pt-4 px-6 dark:text-dark-text-color"
+            >
+              I am a front-end developer based in the UK, driven by a strong
+              passion for building web applications that deliver an outstanding
+              user experience. My primary goal is to create web apps that users
+              truly enjoy using and find easy to navigate.
+            </p>
+          </div>
+
+          <div
+            class="relative grid w-[200px] h-[290px] border-2 border-solid border-text-color-light rounded-full justify-self-center place-items-center lg:w-[400px] lg:h-[580px]"
+          >
+            <div
+              class="w-[170px] h-[260px] custom-gradient rounded-full overflow-hidden flex justify-center items-end lg:w-[340px] lg:h-[520px]"
+            >
+              <img
+                class="h-[94%] bg-cover bg-center bg-no-repeat"
+                src="./images/profile.png"
+              />
+            </div>
+
+            <img
+              src="./images/shape-wawes.svg"
+              alt="shape waves"
+              class="absolute opacity-10 w-12 top-20 -left-6 lg:w-24 lg:top-40 lg:-left-16 dark:invert"
+            />
+            <img
+              src="./images/shape-circle.svg"
+              alt="shape circle"
+              class="absolute opacity-10 w-36 -bottom-8 -right-12 rotate-12 -z-10 lg:w-64 lg:-right-20 lg:-bottom-4 dark:invert"
+            />
+          </div>
+
+          <ul
+            class="justify-self-center flex gap-x-5 text-lg text-text-color-light lg:text-2xl lg:gap-x-8 dark:text-dark-title-color"
+          >
+            <a
+              href="https://www.linkedin.com/"
+              class="hover:text-title-color dark:hover:text-dark-text-color"
+              target="_blank"
+            >
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+
+            <a
+              href="https://github.com/"
+              class="hover:text-title-color dark:hover:text-dark-text-color"
+              target="_blank"
+            >
+              <i class="ri-github-line"></i>
+            </a>
+
+            <a
+              href="https://dribbble.com/"
+              class="hover:text-title-color dark:hover:text-dark-text-color"
+              target="_blank"
+            >
+              <i class="ri-dribbble-line"></i>
+            </a>
+          </ul>
+        </div>
+
+        <!-- Home info-1 -->
+        <div
+          class="grid gap-y-8 md:col-span-3 md:order-1 md:mt-56 md:gap-y-6 lg:mt-64"
+        >
+          <div>
+            <h3 class="home-info-title">BIOGRAPHY</h3>
+            <p
+              class="font-title-font text-title-color dark:text-dark-title-color"
+            >
+              I am a front-end developer passionate about building accessible
+              web apps that deliver an outstanding user experience.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="home-info-title">CONTACT</h3>
+            <p
+              class="font-title-font text-title-color dark:text-dark-title-color"
+            >
+              John, London <br />
+              info@john.com <br />
+              +44 9876363228 <br />
+            </p>
+          </div>
+
+          <div>
+            <h3 class="home-info-title">SERVICES</h3>
+            <p
+              class="font-title-font text-title-color dark:text-dark-title-color"
+            >
+              Web Design <br />
+              Web Development <br />
+            </p>
+          </div>
+        </div>
+
+        <!-- Home info-2 -->
+        <div
+          class="grid gap-y-8 md:col-span-3 md:order-3 md:mt-56 md:text-right md:gap-y-6 lg:mt-64"
+        >
+          <div>
+            <h3 class="home-info-title">YEARS OF EXPERIENCE</h3>
+            <p class="home-info-number dark:text-dark-title-color">06+</p>
+          </div>
+
+          <div>
+            <h3 class="home-info-title">COMPLETED PROJECTS</h3>
+            <p class="home-info-number dark:text-dark-title-color">22+</p>
+          </div>
+
+          <div>
+            <h3 class="home-info-title">COMPANIES WORKED</h3>
+            <p class="home-info-number dark:text-dark-title-color">4+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- Skills Section -->
+    <section class="skills py-10 lg:pt-20" id="skills">
+      <div
+        class="container mx-auto border-b border-solid border-title-color pb-12 md:pb-20 dark:border-dark-border-color"
+      >
+        <div
+          class="grid justify-items-center gap-y-14 md:grid-cols-12 md:justify-center md:gap-x-12"
+        >
+          <!-- Col Skills description -->
+          <div
+            class="grid justify-items-center content-start gap-y-6 text-center md:text-left md:justify-items-start md:col-span-5"
+          >
+            <h1
+              class="text-2xl text-title-color font-semibold lg:text-4xl dark:text-dark-title-color"
+            >
+              Skills & Experience
+            </h1>
+            <p class="text-base text-text-color-light px-8 md:px-0">
+              As a skilled front-end developer, I possess a strong foundation in
+              HTML, CSS, and JavaScript, enabling me to create visually
+              appealing and interactive user interfaces. My proficiency in
+              popular frameworks like React and Bootstrap allows me to build
+              responsive and feature-rich applications efficiently. With a keen
+              eye for design, I prioritize mobile-first principles and ensure
+              cross-browser compatibility for seamless user experiences.
+            </p>
+          </div>
+
+          <!-- Skills -->
+          <div
+            class="grid justify-items-center grid-cols-3 gap-x-8 gap-y-10 md:grid-cols-4 md:col-span-7"
+          >
+            <div class="skills-data">
+              <div class="skills-image-circle dark:bg-dark-container-color">
+                <img src="images/html-1.svg" alt="" class="w-10" />
+              </div>
+
+              <h3 class="text-sm mb-1 md:text-base">HTML</h3>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-image-circle dark:bg-dark-container-color">
+                <img src="images/css-3.svg" alt="" class="w-10" />
+              </div>
+
+              <h3 class="text-sm mb-1 md:text-base">CSS</h3>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-image-circle dark:bg-dark-container-color">
+                <img src="images/tailwind.svg" alt="" class="w-10" />
+              </div>
+
+              <h3 class="text-sm mb-1 md:text-base">Tailwind</h3>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-image-circle dark:bg-dark-container-color">
+                <img src="images/bootstrap.svg" alt="" class="w-10" />
+              </div>
+
+              <h3 class="text-sm mb-1 md:text-base">Bootstrap</h3>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-image-circle dark:bg-dark-container-color">
+                <img src="images/logo-javascript.svg" alt="" class="w-10" />
+              </div>
+
+              <h3 class="text-sm mb-1 md:text-base">JavaScript</h3>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-image-circle dark:bg-dark-container-color">
+                <img src="images/nextjs.svg" alt="" class="w-10" />
+              </div>
+
+              <h3 class="text-sm mb-1 md:text-base">Next.js</h3>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-image-circle dark:bg-dark-container-color">
+                <img src="images/react-2.svg" alt="" class="w-10" />
+              </div>
+
+              <h3 class="text-sm mb-1 md:text-base">React</h3>
+            </div>
+
+            <div class="skills-data">
+              <div class="skills-image-circle dark:bg-dark-container-color">
+                <img src="images/vue-js.svg" alt="" class="w-10" />
+              </div>
+
+              <h3 class="text-sm mb-1 md:text-base">Vue.js</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section End -->
+
+    <!-- Services Section -->
+    <section class="services py-10 lg:pt-20" id="services">
+      <h2 class="section-title lg:text-4xl dark:text-dark-title-color">
+        Services
+      </h2>
+      <span class="section-subtitle">What I offer</span>
+
+      <div
+        class="container mx-auto border-b border-solid border-title-color pb-12 flex justify-center md:pb-20 dark:border-dark-border-color"
+      >
+        <div
+          class="grid justify-items-center gap-y-10 md:grid-cols-2 md:gap-x-16 lg:grid-cols-3 lg:gap-x-20"
+        >
+          <div
+            class="services-card lg:w-[250px] lg:h-[350px] dark:bg-dark-container-color"
+          >
+            <i
+              class="ri-layout-4-line block text-3xl text-title-color mb-3 dark:text-dark-title-color"
+            ></i>
+            <h2 class="text-2xl font-semibold mb-6 dark:text-dark-title-color">
+              Web <br />
+              Design
+            </h2>
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit
+              velit aperiam quis delectus corporis porro tenetur cupiditate
+              laudantium autem.
+            </p>
+            <div class="services-border lg:w-[270px] lg:h-[370px]"></div>
+          </div>
+
+          <div
+            class="services-card lg:w-[250px] lg:h-[350px] dark:bg-dark-container-color"
+          >
+            <i
+              class="ri-code-line block text-3xl text-title-color mb-3 transform duration-500 dark:text-dark-title-color"
+            ></i>
+            <h2 class="text-2xl font-semibold mb-6 dark:text-dark-title-color">
+              Web <br />
+              Development
+            </h2>
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+              voluptatum cum vero voluptas nisi ut quibusdam nulla sunt fugit
+              inventore.
+            </p>
+            <div class="services-border lg:w-[270px] lg:h-[370px]"></div>
+          </div>
+
+          <div
+            class="services-card lg:w-[250px] lg:h-[350px] dark:bg-dark-container-color"
+          >
+            <i
+              class="ri-quill-pen-line block text-3xl text-title-color mb-3 transform duration-500 dark:text-dark-title-color"
+            ></i>
+            <h2 class="text-2xl font-semibold mb-6 dark:text-dark-title-color">
+              UI/UX <br />
+              Design
+            </h2>
+            <p class="text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis aspernatur omnis vero velit repudiandae earum sit
+              odio unde praesentium architecto.
+            </p>
+            <div class="services-border lg:w-[270px] lg:h-[370px]"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Projects Section -->
+    <section class="projects py-10 lg:pt-20" id="projects">
+      <h2 class="section-title lg:text-4xl dark:text-dark-title-color">
+        Projects
+      </h2>
+      <span class="section-subtitle">Most recent work</span>
+
+      <div
+        class="container mx-auto border-b border-solid border-title-color pb-12 md:pb-20 dark:border-dark-border-color"
+      >
+        <div
+          class="projects-swiper swiper w-[400px] md:w-[500px] lg:w-[900px] overflow-hidden"
+        >
+          <!-- Projects container -->
+          <div class="swiper-wrapper">
+            <!-- Project-1 -->
+            <div class="swiper-slide grid justify-items-center mb-16 lg:mb-24">
+              <img
+                src="images/modern-website.jpg"
+                alt=""
+                class="w-[250px] h-[220px] rounded-xl mb-5 lg:w-[320px] lg:mb-8"
+              />
+              <div>
+                <span class="text-sm text-text-color-light mb-2">Web</span>
+                <h1 class="text-xl mb-4 dark:text-dark-title-color">
+                  Modern Website
+                </h1>
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-x-2 text-sm text-title-color dark:text-dark-title-color group"
+                >
+                  View demo
+                  <i
+                    class="ri-arrow-right-line text-base transition-transform duration-300 group-hover:translate-x-1"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project-2 -->
+            <div class="swiper-slide grid justify-items-center mb-16 lg:mb-24">
+              <img
+                src="images/e-commerce.jpg"
+                alt=""
+                class="w-[250px] h-[220px] rounded-xl mb-5 lg:w-[320px] lg:mb-8"
+              />
+              <div>
+                <span class="text-sm text-text-color-light mb-2">Web</span>
+                <h1 class="text-xl mb-4 dark:text-dark-title-color">
+                  E-Commerce Store
+                </h1>
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-x-2 text-sm text-title-color group dark:text-dark-title-color"
+                >
+                  View demo
+                  <i
+                    class="ri-arrow-right-line text-base transition-transform duration-300 group-hover:translate-x-1"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="swiper-slide grid justify-items-center mb-16 lg:mb-24">
+              <img
+                src="images/landing-page.jpg"
+                alt=""
+                class="w-[250px] h-[220px] rounded-xl mb-5 lg:w-[320px] lg:mb-8"
+              />
+              <div>
+                <span class="text-sm text-text-color-light mb-2">Web</span>
+                <h1 class="text-xl mb-4 dark:text-dark-title-color">
+                  Landing Page
+                </h1>
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-x-2 text-sm text-title-color group dark:text-dark-title-color"
+                >
+                  View demo
+                  <i
+                    class="ri-arrow-right-line text-base transition-transform duration-300 group-hover:translate-x-1"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="swiper-slide grid justify-items-center mb-16 lg:mb-24">
+              <img
+                src="images/project4.jpg"
+                alt=""
+                class="w-[250px] h-[220px] rounded-xl mb-5 lg:w-[320px] lg:mb-8"
+              />
+              <div>
+                <span class="text-sm text-text-color-light mb-2">Design</span>
+                <h1 class="text-xl mb-4 dark:text-dark-title-color">
+                  Application Design
+                </h1>
+                <a
+                  href="#"
+                  class="inline-flex items-center gap-x-2 text-sm text-title-color dark:text-dark-title-color group"
+                >
+                  View demo
+                  <i
+                    class="ri-arrow-right-line text-base transition-transform duration-300 group-hover:translate-x-1"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrows -->
+          <div
+            class="swiper-button-next after:content-none w-auto h-auto top-20 m-auto text-4xl text-title-color dark:text-dark-title-color"
+          >
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+
+          <div
+            class="swiper-button-prev after:content-none w-auto h-auto top-20 m-auto text-4xl text-title-color dark:text-dark-title-color"
+          >
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section End -->
+
+    <!-- Testimonial Section -->
+    <section class="testimonial relative py-10 lg:pt-20" id="testimonial">
+      <h2 class="section-title lg:text-4xl dark:text-dark-title-color">
+        Testimonial
+      </h2>
+      <span class="section-subtitle">My client saying</span>
+
+      <div
+        class="container mx-auto border-b border-solid border-title-color pb-12 md:pb-20 dark:border-dark-border-color"
+      >
+        <div class="testimonial-swiper swiper w-[400px] lg:w-[575px]">
+          <div class="swiper-wrapper">
+            <!-- Testimonial-1 -->
+            <div class="text-center swiper-slide mb-16 lg:mb-20">
+              <p
+                class="font-title-font text-title-color mb-6 lg:text-2xl lg:mb-8 dark:text-dark-title-color"
+              >
+                “Working with John is to give a good impression, I carry out my
+                project at a good cost, with excellent quality and attention.
+                Great service and recommended.”
+              </p>
+              <div>
+                <h3
+                  class="font-body-font text-sm mb-1 dark:text-dark-title-color"
+                >
+                  Klay Harris
+                </h3>
+                <span class="text-xs text-text-color-light">Client</span>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="text-center swiper-slide mb-16 lg:mb-20">
+              <p
+                class="font-title-font text-title-color mb-6 lg:text-2xl lg:mb-8 dark:text-dark-title-color"
+              >
+                “Working with John is to give a good impression, I carry out my
+                project at a good cost, with excellent quality and attention.
+                Great service and recommended.”
+              </p>
+              <div>
+                <h3
+                  class="font-body-font text-sm mb-1 dark:text-dark-title-color"
+                >
+                  Mary Lens
+                </h3>
+                <span class="text-xs text-text-color-light">Client</span>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="text-center swiper-slide mb-16 lg:mb-20">
+              <p
+                class="font-title-font text-title-color mb-6 lg:text-2xl lg:mb-8 dark:text-dark-title-color"
+              >
+                “Working with John is to give a good impression, I carry out my
+                project at a good cost, with excellent quality and attention.
+                Great service and recommended.”
+              </p>
+              <div>
+                <h3
+                  class="font-body-font text-sm mb-1 dark:text-dark-title-color"
+                >
+                  Anna Chel
+                </h3>
+                <span class="text-xs text-text-color-light">Client</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper arrows -->
+          <div
+            class="swiper-button-prev after:content-none w-auto h-auto top-auto text-2xl text-title-color bottom-2 left-1/3 lg:text-4xl lg:left-1/4 dark:text-dark-title-color"
+          >
+            <i class="ri-arrow-left-line"></i>
+          </div>
+
+          <div
+            class="swiper-button-next after:content-none w-auto h-auto top-auto text-2xl text-title-color bottom-2 right-1/3 lg:text-4xl lg:right-1/4 dark:text-dark-title-color"
+          >
+            <i class="ri-arrow-right-line"></i>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="images/shape-circle.svg"
+        alt=""
+        class="w-36 absolute -right-12 bottom-48 rotate-12 opacity-10 lg:w-72 lg:-left-28 lg:bottom-32 dark:invert"
+      />
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Contact Section -->
+    <section class="contact py-10 lg:pt-20" id="contact">
+      <h2 class="section-title lg:text-4xl dark:text-dark-title-color">
+        Contact Me
+      </h2>
+      <span class="section-subtitle">Get in touch</span>
+
+      <div
+        class="container mx-auto grid gap-y-14 border-b border-solid border-title-color pb-12 md:flex md:justify-center md:gap-x-24 md:pb-20 lg:gap-x-40 lg:pt-8 dark:border-dark-border-color"
+      >
+        <!-- Contact details -->
+        <div class="">
+          <h3 class="contact-title lg:mb-12 dark:text-dark-title-color">
+            <i class="ri-chat-3-line text-base lg:text-xl"></i>
+            Talk to me
+          </h3>
+
+          <div class="grid gap-y-8 lg:gap-y-12">
+            <div class="grid gap-y-3">
+              <span class="text-sm text-text-color-light">Email</span>
+              <span
+                class="text-sm font-title-font text-title-color lg:text-base dark:text-dark-title-color"
+                >info@john.com</span
+              >
+            </div>
+
+            <div class="grid gap-y-3">
+              <span class="text-sm text-text-color-light">Whatsapp</span>
+              <span
+                class="text-sm font-title-font text-title-color lg:text-base dark:text-dark-title-color"
+                >+4748870283</span
+              >
+              <a
+                href="https://api.whatsapp.com/send?phone=519876543210&text=Hello, more information!"
+                target="_blank"
+                class="inline-flex items-center gap-x-2 text-sm text-title-color group dark:text-dark-title-color"
+              >
+                Write me
+                <i
+                  class="ri-arrow-right-line transition-transform duration-300 group-hover:translate-x-1"
+                ></i>
+              </a>
+            </div>
+
+            <div class="grid gap-y-3">
+              <span class="text-sm text-text-color-light">Messenger</span>
+              <span
+                class="text-sm font-title-font text-title-color lg:text-base dark:text-dark-title-color"
+                >@john</span
+              >
+              <a
+                href="https://m.me/bedimcode"
+                target="_blank"
+                class="inline-flex items-center gap-x-2 text-sm text-title-color group dark:text-dark-title-color"
+              >
+                Write me
+                <i
+                  class="ri-arrow-right-line transition-transform duration-300 group-hover:translate-x-1"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Write me -->
+        <div class="">
+          <h3 class="contact-title lg:mb-12 dark:text-dark-title-color">
+            <i class="ri-send-plane-line text-base lg:text-xl"></i> Write me
+            your project
+          </h3>
+
+          <form
+            action=""
+            class="grid gap-y-8 relative md:w-[380px] lg:gap-x-10"
+            id="contact-form"
+          >
+            <div class="relative h-16">
+              <label
+                class="contact-form-label dark:text-dark-title-color dark:bg-dark-body-color"
+                >Name</label
+              >
+              <input
+                type="text"
+                name="user_name"
+                required
+                placeholder="Write your name"
+                class="contact-form-input dark:focus:text-dark-title-color"
+                id="contact-name"
+              />
+            </div>
+
+            <div class="relative h-16">
+              <label
+                class="contact-form-label dark:text-dark-title-color dark:bg-dark-body-color"
+                >Email</label
+              >
+              <input
+                type="email"
+                name="user_email"
+                required
+                placeholder="Write your email"
+                class="contact-form-input dark:focus:text-dark-title-color"
+                id="contact-email"
+              />
+            </div>
+
+            <div class="relative h-40">
+              <label
+                class="contact-form-label dark:text-dark-title-color dark:bg-dark-body-color"
+                >Project</label
+              >
+              <textarea
+                name="user_project"
+                placeholder="Write about project"
+                id="contact-project"
+                class="contact-form-input resize-none dark:focus:text-dark-title-color"
+              ></textarea>
+            </div>
+
+            <p
+              class="absolute bottom-8 left-0 text-sm"
+              id="contact-message"
+            ></p>
+
+            <button
+              type="submit"
+              class="inline-flex w-max justify-center gap-x-2 text-title-color text-sm cursor-pointer font-semibold group lg:font-title-font lg:text-xl lg:mt-3 dark:text-dark-title-color"
+            >
+              Submit
+              <i
+                class="ri-arrow-right-up-line text-base transition-transform duration-300 group-hover:translate-x-1 lg:text-2xl lg:font-normal"
+              ></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container mx-auto text-center pt-8 pb-28 lg:pb-12">
+        <h1
+          class="text-4xl font-semibold text-title-color font-title-font mb-4 dark:text-dark-title-color"
+        >
+          John
+        </h1>
+        <p>Frontend Developer</p>
+
+        <ul
+          class="flex justify-center gap-x-10 my-10 text-title-color lg:gap-x-12 lg:my-12 dark:text-dark-title-color"
+        >
+          <li>
+            <a href="#home" class="hover:underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="hover:underline">Skills</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="hover:underline">Projects</a>
+          </li>
+        </ul>
+
+        <ul
+          class="flex justify-center gap-x-5 text-xl text-title-color lg:gap-x-8 dark:text-dark-title-color"
+        >
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            class="transition-transform duration-300 hover:-translate-y-1 lg:text-2xl"
+          >
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+
+          <a
+            href="https://github.com/"
+            target="_blank"
+            class="transition-transform duration-300 hover:-translate-y-1 lg:text-2xl"
+          >
+            <i class="ri-github-line"></i>
+          </a>
+
+          <a
+            href="https://dribbble.com/"
+            target="_blank"
+            class="transition-transform duration-300 hover:-translate-y-1 lg:text-2xl"
+          >
+            <i class="ri-dribbble-line"></i>
+          </a>
+        </ul>
+
+        <span class="block mt-16 text-sm text-text-color-light lg:mt-20">
+          Copyright &copy; 2023, All Rights Reserved
+        </span>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Scroll up button -->
+    <a
+      href="#"
+      class="fixed right-8 bottom-28 bg-body-color py-1 px-2 rounded-md text-lg text-title-color z-10 transition-transform duration-300 shadow-box-shadow-2 hover:-translate-y-1 lg:right-12 dark:bg-dark-container-color dark:shadow-box-shadow-dark"
+      id="scroll-up"
+    >
+      <i class="ri-arrow-up-line dark:text-dark-title-color"></i>
+    </a>
+    <!-- Scroll up button End -->
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
