@@ -24,7 +24,7 @@ The Dark & Light Mode Portfolio Website is a stunning and modern single-page web
 
 ### Screenshot
 
-![Screenshot](./src/images/screenshot_dark.png)
+![Screenshot](./src/images/screenshot_dark.png) (./src/images/screenshot_dark.png)
 
 ### Links
 
