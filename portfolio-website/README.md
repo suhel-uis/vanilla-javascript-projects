@@ -28,7 +28,7 @@ The Dark & Light Mode Portfolio Website is a stunning and modern single-page web
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/suhel-uis/javascript-api-project/tree/main/movie-search)
+- Solution URL: [Solution](https://github.com/suhel-uis/vanilla-javascript-projects/tree/main/portfolio-website)
 - Live Site URL: [Add live site URL here]()
 
 ## Key Features
